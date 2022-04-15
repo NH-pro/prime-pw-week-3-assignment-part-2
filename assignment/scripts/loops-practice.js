@@ -14,17 +14,38 @@ for (let i=0; i<4; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
 
+// Need to change 'i<4' into 'i<6'.
+for (let i=0; i<6; i++){
+  console.log(i);
+}
+
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
+
+// Need to add an if statement to console only when 'i>2'.
+for (let i=0; i<6; i++){
+  if(i>2){
+    console.log(i);
+  }
+}
 
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
+// We have to add a conditional where 'i' can only be logged if it can be divided by 2 with no remainder.
+for (let i=0; i<11; i++){
+  if(i % 2 === 0 && i !== 0){
+    console.log(i);
+  }
+}
+
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
-
+for (let i=5; i>-1; i--){
+  console.log(i);
+}
 
 // 2. For of loops  
 console.log('---- 2. For Of loop ----');
